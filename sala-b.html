@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>PORTAL - Sala B</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="Garlic.js-1.4.2/garlic.js"></script>
+    <link href="tema.css" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BANCO DE DADOS LACAF">
+    <meta name="author" content="Daniel Carvalho" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+
+</head>
+
+<body onload="start()">
+    <div id="tudo">
+
+        <header>
+
+            <div class="logo" id="inicio"><a href="index.html"><img src="logo.png" alt="logo portal"></a></div>
+            <div class="titulo">
+                <h1><span style="font-size:30px; font-weight: bolder;">PORTAL</span><br>Inclusão, comunicação e
+                    aprendizado.</h1>
+            </div>
+            <nav class="none">
+                <ul>
+                    <li><a href="index.html">Ajuda</a></li>
+                    <li><a href="sala-a.html">Sala A</a></li>
+                    <li class="pagina-atual"><a href="sala-b.html">Sala B</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vREFXxqUO0UaujaFsg0PboTAtLlsY_uzT3tSbaWsxqhDtcSGlxGK86hl1sLjFW9MqTbBm_KyGzLluyh/pub?output=xlsx"
+                            target="_blank" title="Planilha atualizada">Planilha</a></li>
+                </ul>
+
+            </nav>
+
+
+        </header>
+
+        <div class="ficha-de-avaliacao">
+            <h2>SALA B</h2>
+        </div>
+
+        <form data-persist="garlic" name="submit-to-google-sheet" method="POST" onsubmit="desabilitar(form)">
+
+            <article>
+
+                <h2 class="DATA" style="background:transparent">DADOS DO RESPONSÁVEL PELA CONTAGEM</h2>
+                <br> NOME<span class="vermelho"> <b>*</b></span><br>
+                <input name="RESPONSAVEL" type="text" placeholder="Nome do responsável" maxlength="140" required>
+                <br><br>
+                DATA<span class="vermelho"> *</span><br>
+                <input name="DATA" type="date" min="2000-01-01" placeholder="Data de Hoje" required> <br><br>
+            </article>
+
+
+
+
+            <article>
+                <h2 class="DATA" style="background:transparent">ALUNOS (<b>SALA B</b>)</h2><br>
+
+                <b>Acsa Emanuele Fidelis da Silva
+                </b><span class="vermelho"> *</span><select name="Acsa Emanuele Fidelis da Silva"           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Adielle Anne Dantas de Oliveira Pereira
+                </b><span class="vermelho"> *</span><select name="Adielle Anne Dantas de Oliveira Pereira"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Alan Fernando Silva Costa
+                </b><span class="vermelho"> *</span><select name="Alan Fernando Silva Costa" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Alice Maria da Hora Cavalcanti
+                </b><span class="vermelho"> *</span><select name="Alice Maria da Hora Cavalcanti" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Allanna Eduarda Araújo da Silva
+                </b><span class="vermelho"> *</span><select name="Allanna Eduarda Araújo da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Allysson Wallace Barreto de Araújo
+                </b><span class="vermelho"> *</span><select name="Allysson Wallace Barreto de Araújo" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Andrielly Mikaelly Soares da Silva
+                </b><span class="vermelho"> *</span><select name="Andrielly Mikaelly Soares da Silva" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Anna Laura Tomaz Soares da Silva
+                </b><span class="vermelho"> *</span><select name="Anna Laura Tomaz Soares da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Anny Sabrina de Oliveira Lopes
+                </b><span class="vermelho"> *</span><select name="Anny Sabrina de Oliveira Lopes" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Arthur Lucas de Souza Buregio de Araújo
+                </b><span class="vermelho"> *</span><select name="Arthur Lucas de Souza Buregio de Araújo"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Barbara Isabely Gomes da Silva
+                </b><span class="vermelho"> *</span><select name="Barbara Isabely Gomes da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Beatriz Nathaly de França
+                </b><span class="vermelho"> *</span><select name="Beatriz Nathaly de França" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Beatriz Rodrigues Oliveira da Silva
+                </b><span class="vermelho"> *</span><select name="Beatriz Rodrigues Oliveira da Silva" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Bruna Arianne Silva de Araújo
+                </b><span class="vermelho"> *</span><select name="Bruna Arianne Silva de Araújo"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Caio César de Toledo Melo
+                </b><span class="vermelho"> *</span><select name="Caio César de Toledo Melo" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Camyla Alexandre de Moraes
+                </b><span class="vermelho"> *</span><select name="Camyla Alexandre de Moraes"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Carlos André Lourenço de Aquino Júnior
+                </b><span class="vermelho"> *</span><select name="Carlos André Lourenço de Aquino Júnior"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Clívia Ellen Lucena de Oliveira
+                </b><span class="vermelho"> *</span><select name="Clívia Ellen Lucena de Oliveira"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Danilo de Jesus Silva
+                </b><span class="vermelho"> *</span><select name="Danilo de Jesus Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Davi José de Sousa Silva
+                </b><span class="vermelho"> *</span><select name="Davi José de Sousa Silva" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Débora Eduarda Verçoza de Melo
+                </b><span class="vermelho"> *</span><select name="Débora Eduarda Verçoza de Melo" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Dilson Pereira da Silva Júnior
+                </b><span class="vermelho"> *</span><select name="Dilson Pereira da Silva Júnior" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Eishila Alves Monteiro
+                </b><span class="vermelho"> *</span><select name="Eishila Alves Monteiro" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Elielton Thiago Gonçalves
+                </b><span class="vermelho"> *</span><select name="Elielton Thiago Gonçalves"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Elioenai Cassio Castro de Freitas
+                </b><span class="vermelho"> *</span><select name="Elioenai Cassio Castro de Freitas" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Ellen Louyse de Araújo Santos
+                </b><span class="vermelho"> *</span><select name="Ellen Louyse de Araújo Santos" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Evellyn Cristina Firmino da Silva
+                </b><span class="vermelho"> *</span><select name="Evellyn Cristina Firmino da Silva" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Evelyn Azevedo Galdino
+                </b><span class="vermelho"> *</span><select name="Evelyn Azevedo Galdino"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Fernanda Rodrigues Gonzaga
+                </b><span class="vermelho"> *</span><select name="Fernanda Rodrigues Gonzaga"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Ghyovanna Keroli Brandão Eufrásio
+                </b><span class="vermelho"> *</span><select name="Ghyovanna Keroli Brandão Eufrásio" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Glaivson Alisson da Silva Gonçalves
+                </b><span class="vermelho"> *</span><select name="Glaivson Alisson da Silva Gonçalves" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Greicilen da Silva Gomes
+                </b><span class="vermelho"> *</span><select name="Greicilen da Silva Gomes"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Herick Cavalcanti de Oliveira
+                </b><span class="vermelho"> *</span><select name="Herick Cavalcanti de Oliveira"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Humberto Hugo da Silva Campos
+                </b><span class="vermelho"> *</span><select name="Humberto Hugo da Silva Campos"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Ialy Gabriela Soares da Silva
+                </b><span class="vermelho"> *</span><select name="Ialy Gabriela Soares da Silva" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Jennifer Monique dos Santos Silva
+                </b><span class="vermelho"> *</span><select name="Jennifer Monique dos Santos Silva" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>João Pedro Bezerra da Silva
+                </b><span class="vermelho"> *</span><select name="João Pedro Bezerra da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>João Victor Costa Silva
+                </b><span class="vermelho"> *</span><select name="João Victor Costa Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Jobson Dutra da Silva
+                </b><span class="vermelho"> *</span><select name="Jobson Dutra da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Julia Jordão do Espírito Santo
+                </b><span class="vermelho"> *</span><select name="Julia Jordão do Espírito Santos"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Juliermes Gilberto Machado Mendes
+                </b><span class="vermelho"> *</span><select name="Juliermes Gilberto Machado Mendes"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Karollayne Lima Ladislau
+                </b><span class="vermelho"> *</span><select name="Karollayne Lima Ladislau"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Letícia Elem Silva Marinho
+                </b><span class="vermelho"> *</span><select name="Letícia Elem Silva Marinho" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Luana Paulino Cordeiro de Melo
+                </b><span class="vermelho"> *</span><select name="Luana Paulino Cordeiro de Melo"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Lucas Leonardo Vilela Medeiros
+                </b><span class="vermelho"> *</span><select name="Lucas Leonardo Vilela Medeiros" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Luiz Fernando Ramos de Toledo
+                </b><span class="vermelho"> *</span><select name="Luiz Fernando Ramos de Toledo"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Manoela Nogueira dos Santos
+                </b><span class="vermelho"> *</span><select name="Manoela Nogueira dos Santos"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Marcelo Anderson Oliveira de Santana
+                </b><span class="vermelho"> *</span><select name="Marcelo Anderson Oliveira de Santana"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Márcia Thais Alves Paulino
+                </b><span class="vermelho"> *</span><select name="Márcia Thais Alves Paulino" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Marcos Filipe Batista de Albuquerque
+                </b><span class="vermelho"> *</span><select name="Marcos Filipe Batista de Albuquerque"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Maria Eduarda Rodrigues da Silv
+                </b><span class="vermelho"> *</span><select name="Maria Eduarda Rodrigues da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Maria Geyna Gaudino de Siqueira
+                </b><span class="vermelho"> *</span><select name="Maria Geyna Gaudino de Siqueira" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Maria Victória Virginia da Silva
+                </b><span class="vermelho"> *</span><select name="Maria Victória Virginia da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Marielly Andresa Costa da Silva
+                </b><span class="vermelho"> *</span><select name="Marielly Andresa Costa da Silva" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Marley Gabriel da Silva Santo
+                </b><span class="vermelho"> *</span><select name="Marley Gabriel da Silva Santos"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Matheus Laurindo Marques
+                </b><span class="vermelho"> *</span><select name="Matheus Laurindo Marques" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Matheus Rodrigues Cavalcante
+                </b><span class="vermelho"> *</span><select name="Matheus Rodrigues Cavalcante"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Maysadora Maria Sobral
+                </b><span class="vermelho"> *</span><select name="Maysadora Maria Sobral"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Milena Adriana de Assis
+                </b><span class="vermelho"> *</span><select name="Milena Adriana de Assis" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Miquéias da Silva Olegário
+                </b><span class="vermelho"> *</span><select name="Miquéias da Silva Olegário"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Mozart Martins Santos de Oliveira
+                </b><span class="vermelho"> *</span><select name="Mozart Martins Santos de Oliveira"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Nicole de Albuquerque Silva
+                </b><span class="vermelho"> *</span><select name="Nicole de Albuquerque Silva" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Rafael da Silva
+                </b><span class="vermelho"> *</span><select name="Rafael da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Renata da Silva Lins
+                </b><span class="vermelho"> *</span><select name="Renata da Silva Lins"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Rennan Leonny Ferreira de Souza
+                </b><span class="vermelho"> *</span><select name="Rennan Leonny Ferreira de Souza"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Rinaldo Jerônimo da Silva Júnior
+                </b><span class="vermelho"> *</span><select name="Rinaldo Jerônimo da Silva Júnior"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Rosângela Cilene da Silva
+                </b><span class="vermelho"> *</span><select name="Rosângela Cilene da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Ryan Henrique
+                </b><span class="vermelho"> *</span><select name="Ryan Henrique" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Stephany Maria Luis da Silva
+                </b><span class="vermelho"> *</span><select name="Stephany Maria Luis da Silva" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Suelen Cintia Santana
+                </b><span class="vermelho"> *</span><select name="Suelen Cintia Santana"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Tadeu Marcos Antonio da Silva
+                </b><span class="vermelho"> *</span><select name="Tadeu Marcos Antonio da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Talisson de Souza Mendes da Silva
+                </b><span class="vermelho"> *</span><select name="Talisson de Souza Mendes da Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Thiago Rocha Silva
+                </b><span class="vermelho"> *</span><select name="Thiago Rocha Silva"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Vitor Hugo Felipe de Melo
+                </b><span class="vermelho"> *</span><select name="Vitor Hugo Felipe de Melo" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Vitor José Sobral de Farias
+                </b><span class="vermelho"> *</span><select name="Vitor José Sobral de Farias" 
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Wagner José Cunha Souza Costa
+                </b><span class="vermelho"> *</span><select name="Wagner José Cunha Souza Costa"
+           >
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+                <b>Whênita Sabrina Silva dos Santos</b><span class="vermelho"> *</span><select
+                    name="Whênita Sabrina Silva dos Santos">
+                    <option value="P">SIM</option>
+                    <option value="F">NÃO</option>
+                </select><BR><br>
+
+
+            </article>
+
+
+
+
+
+
+
+
+            <br>
+            <div id="botoes">
+                <button id="true-button" style="display:block; margin-top:5px; margin-bottom:-50px;" class="none"
+                    type="submit" name="myButton">Enviar</button><br><br>
+                <button id="fake-button" type="button" style="display:none; margin-top:-50px; margin-bottom:-7px;"
+                    onclick="semInternet()">Enviar</button><br><br>
+                <p id="semInternet"
+                    style="display:none; width:100%; margin-top:-20px; margin-bottom:50px; background:rgb(255, 110, 110); padding:12px; border-radius:10px; text-align: center;">
+                    <b>Você
+                        está sem internet.</b><br>Nós cuidaremos direitinho do que você preencheu <b>durante as
+                        próximas
+                        24hrs</b>,<br>mas <b>não esquece de voltar aqui quando tiver internet, ok?</b><br>Até daqui a
+                    pouco 😘</p>
+                <button class="none" style="margin-bottom:-50px;" type="reset">Limpar Dados</button><br><br>
+            </div>
+            <a href="https://docs.google.com/spreadsheets/d/1Gqgbx0difYQnPlUbczBQnK1B8NkwqD_Hs6pP0YF10J0/edit?usp=sharing"
+                target="_blank">
+                <button type="button" style="margin-top:13px;">Editar Frequência Sala B</button>
+            </a>
+        </form>
+
+
+        <footer>
+            <p>
+                Feito por <a href="https://fb.com/dncoliveira" title="Me contrata pfvr">Daniel Carvalho</a><br>Graduando
+                de
+                Sistemas de Informação - UFPE<br>
+                Thanks a lot, <a href="https://github.com/jamiewilson/form-to-google-sheets"
+                    title="obg por tudo cara">jamiewilson</a>
+                ❤<br>
+                2019
+            </p>
+        </footer>
+    </div>
+
+
+
+    <script src="scripts-necessarios.js">//scripts necessários para funcionar
+    </script>
+
+
+
+
+    <script type="text/javascript">
+
+    </script>
+
+    <script>//script para preencher a planilha no google
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyN73kVsSbiLGHdmLcYhwfkcJ6viHvXQxyAWwMOxSxFVFWWDPWV/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert('Sucesso!\nEm alguns segundos a planilha será atualizada.'))
+                .catch(error => alert('Ocorreu um erro!\nVerifique a conexão com a internet.'))
+        })
+    </script>
+
+
+</body>
+
+</html>

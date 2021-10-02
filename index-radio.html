@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>PORTAL - Contador de Faltas</title>
+    <meta charset="utf-8">
+    <link href="tema.css" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BANCO DE DADOS LACAF">
+    <meta name="author" content="Daniel Carvalho" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="tudo">
+
+        <header>
+
+            <div class="logo" id="inicio"><img src="logo.png" alt="logo portal"></div>
+            <div class="titulo">
+                <h1><span style="font-size:30px; font-weight: bolder;">PORTAL</span><br>Inclusão, comunicação e aprendizado.</h1>
+            </div>
+            <nav class="none">
+                <ul>
+                    <li class="pagina-atual"><a href="index.html">INICIO</a></li>
+                    <li><a href="#salaa" >SALA A</a></li>
+                    <li><a href="#salab" >SALA B</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1ySSgjToajj6wuzwhfqty6uhKq7yFd6uVzT4-s53QiVw/edit#gid=1753142976&range=A1"
+                            target="_blank" title="Planilha atualizada">PLANILHA</a></li>
+                </ul>
+
+            </nav>
+
+
+        </header>
+
+        <div class="ficha-de-avaliacao">
+            <h2>CONTADOR DE FALTAS</h2>
+        </div>
+
+        <form id="formulario" name="submit-to-google-sheet" method="POST" action="">
+
+            <!----==================================ANAMNESE======================-->
+            <article>
+                <h2>
+                    <fieldset id="field-border">
+                        <legend id="#salaa">SALA A</legend>
+                    </fieldset>
+                    </h2><br>
+                    <b style="padding-bottom:20px;">ADALTO NATHAN GOMES DE LIMA</b><span class="vermelho" required> *</span>
+                        <BR>
+                        SIM<input name="ADALTO NATHAN GOMES DE LIMA" type="radio" value="P" checked> 
+                        NÃO<input name="ADALTO NATHAN GOMES DE LIMA" type="radio" value="F" >
+                        <BR><br>
+
+                            <b style="padding-bottom:20px;">ADALTO NATHAN GOMES DE LIMA</b><span class="vermelho" required> *</span>
+                        <BR>
+                        SIM<input name="ADALTO NATHAN GOMES DE LIMA" type="radio" value="P" checked> 
+                        NÃO<input name="ADALTO NATHAN GOMES DE LIMA" type="radio" value="F" >
+                        <BR><br>
+    
+    
+
+
+
+                   
+
+            </article>
+            </form>
+            
+            <article>
+                    <h2>
+                        <fieldset id="field-border">
+                            <legend id="#salaa">SALA B</legend>
+                        </fieldset>
+                    </h2><BR>
+                    <fieldset id="DATA">
+                            <legend>ALUNOS DA SALA (B)</legend>
+                        </fieldset>
+        
+                        <br>
+                        <b>ADALTO NATHAN GOMES DE LIMA</b><span class="vermelho" required> *</span>
+                            <select name="ADALTO NATHAN GOMES DE LIMA">
+                                <option name="ADALTO NATHAN GOMES DE LIMA" value="P" selected>SIM</option>
+                                <option name="ADALTO NATHAN GOMES DE LIMA" value="F">NÃO</option>
+                            </select><BR><br>
+        </article>
+
+
+
+
+
+
+
+
+
+
+            <br>
+            <button class="none" type="submit">Enviar</button><br>
+
+            
+            <a href="https://docs.google.com/spreadsheets/d/1ySSgjToajj6wuzwhfqty6uhKq7yFd6uVzT4-s53QiVw/edit?usp=sharing"
+                target="_blank">
+                <div class="none botao" type="">Editar Planilha<span style="font-size:11px; color:red; opacity: 0.8;"><br>(Você
+                        precisa estar logado.)</span></div>
+            </a>
+    </div><br>
+
+
+
+    
+
+    <footer>
+        <p>
+            Feito por <a href="https://fb.com/dncoliveira" title="Daniel Carvalho">Daniel Carvalho</a><br>Graduando de
+            Sistemas de Informação - UFPE<br>
+            Thanks a lot, <a href="https://github.com/jamiewilson/form-to-google-sheets">jamiewilson</a> ❤<br>
+            2019
+        </p>
+
+    </footer>
+    </div>
+<script>
+$(function(){
+  var formObject = $('.new_materia, .edit_materia');
+  formObject.data('original_serialized_form', formObject.serialize());
+ 
+  $(':submit').click(function() {
+    window.onbeforeunload = null;
+  });
+ 
+  window.onbeforeunload = function() {
+    if (formObject.data('original_serialized_form') !== formObject.serialize()) {
+      return "As mudanças deste formulário não foram salvas. Saindo desta página, todas as mudanças serão perdidas.";
+    }
+  };
+});
+ </script>
+
+ 
+    
+    
+    
+    
+    
+
+    
+
+    <script>
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzsTUdrfvXo-zJ6ON3QoNglZ0lS__oZjzq2lQonE6hNXhE_iPYZ/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert('Faltas contabilizadas com sucesso!\nEm alguns segundos a planilha será atualizada!'))
+                .catch(error => alert('Ocorreu um erro!\nVerifique a conexão com a internet.'))
+        })
+    </script>
+</body>
+
+</html>
